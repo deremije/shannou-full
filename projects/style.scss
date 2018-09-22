@@ -1,0 +1,435 @@
+/* VARIABLES */
+$offwhite: #FCFDFF;
+$white: #fff;
+$black: #000;
+$offblack: #12171d;
+$gray-a: #aaa;
+$gray-e: #eee;
+$gray-7: #777;
+$gray-9: #999;
+$gray2: #b3b3b3;
+$gray-skills: #f6f6f6;
+$gray-project: #f4f4f4;
+$bodytext: #494949;
+$nav-link: #224660;
+$nav-hover: #82a8c2;
+$tileborder: #eaeaea;
+$h5: #959595;
+$button-border: #979797;
+
+/* GLOBAL */
+html {
+    font-size: 10px;
+    height: 100%;
+}
+body {
+    font-size: 1.8rem;
+    font-family: 'Catamaran', 'Helvetica', sans-serif;
+    font-weight: 500;
+    background-color: $offwhite;
+    color: $bodytext;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.grid-parent {
+    display: grid;
+    margin: auto;
+}
+.flex-parent {
+    display: flex;
+    div {
+        margin: auto;
+    }
+    button {
+        margin: auto;
+    }
+}
+section,
+header,
+footer {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+h1, h2, h3, h4, h5 {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    text-align: left;
+    font-weight: 300;
+    width: 100%;
+    max-width: 100rem;
+    margin: auto;
+}
+h1 {
+    font-size: 4.8rem;
+    padding-top: 14.8rem;
+    padding-bottom: 2.6rem;
+    line-height: 7.9rem;
+    display: block;
+}
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 4.9rem;
+    padding: 0 0 1rem 0;
+}
+h4 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: 1rem;
+    padding: .1rem 0 .1rem 0;
+}
+h5 {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    padding: .3rem 0 .1rem 0;
+    font-weight: 500;
+    color: $h5;
+}
+p {
+    display: block;
+    font-size: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    padding-top: 4rem;
+    text-align: right;
+    padding-right: 4rem;
+    margin-right: 0;
+    margin-left: auto;
+    
+    ul {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+    }
+    a {
+        padding: 1.5rem;
+    }
+}
+button:hover {
+    cursor: pointer;
+}
+.point:hover {
+    cursor: pointer;
+}
+.project-wide {
+    width: 80rem;
+    margin: auto;
+    display: block;
+}
+.project-medium {
+    width: 60rem;
+    margin: auto;
+    display: block;
+}
+.project-small {
+    width: 44rem;
+    margin: auto;
+    display: block;
+}
+.drop-down {
+    
+    padding: 5rem 0 0 0;
+}
+.lift-up {
+    padding: 0 0 5rem 0;
+}
+.split-img {
+    width: 100%;
+    padding: 0 0 1rem 0;
+}
+.split-screen {
+    grid-template-columns: 4fr 6fr;
+    grid-column-gap: 2rem;
+}
+
+.dell {
+    background-image: url("../images/dell-banner.png");
+}
+.dls {
+    background-image: url("../images/dls-banner.png");
+}
+.lyric {
+    background-image: url("../images/lyric-banner.png");
+}
+.embedded {
+    background-image: url("../images/embedded-banner.png");
+}
+.connected-building {
+    background-image: url("../images/CB-banner.png");
+}
+.utilities {
+    background-image: url("../images/utilities-banner.png");
+}
+.security {
+    background-image: url("../images/security-banner.png");
+}
+.financial {
+    background-image: url("../images/financial-banner.png");
+}
+.logitech {
+    background-image: url("../images/logitech-banner.png");
+}
+
+/* HEADER */
+header {
+    background-color: $offblack;
+    background-repeat: no-repeat;
+    background-size: 1440px 307px;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 1.6rem;
+    .header-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding-bottom: 16rem;
+    }
+    a:link,
+    a:visited {
+        color: $white;
+    }
+    a:hover {
+        color: $nav-hover;
+    }
+    a:active {
+        color: $black;
+    }
+    nav {
+        height: 2.3rem;
+        padding: 3.9rem 4.1rem 0 0;
+        
+    } 
+    .leftHeader {
+        text-align: left;
+        align-items: center;
+        padding: 3.9rem 0 0 4.1rem;
+        height: 2.3rem;
+        margin-left: 0;
+        margin-right: auto;
+        font-weight: 700;
+        color: $gray-9;
+    }
+    h2 {
+        position: relative;
+        bottom: 6.2rem;
+        line-height: 6.2rem;
+    }
+    .two-line {
+        margin-top: -4rem;
+    }
+    
+}
+
+/* FOOTER */
+footer {
+    background-color: $offblack;
+    color: $gray-9;
+    width: 100%;
+    height: 11.1rem;
+    
+    .grid-parent {
+        grid-template-columns: 50% 50%;
+        a:link,
+        a:visited {
+            color: $gray-9;
+        }
+        a:hover,
+        a:active {
+            color: $white;
+        }
+        #footer-left {
+            padding: 4.4rem 0 3.4rem 0;
+            font-size: 1.6rem;
+            text-align: left;
+            padding-left: 3.9rem;
+            height: 3.3rem;
+        }
+        #footer-right {
+            padding: 4rem 0 3.3rem 0;
+            font-size: 3rem;
+            text-align: right;
+            padding-right: 4rem;
+            height: 3.8rem;
+            a {
+                padding-left: 1rem;
+            }
+        }
+    } 
+}
+
+/* PROJECT PAGE VALUES */
+.project-page {
+    height: auto;
+    width: 100%;
+    background-color: $white;
+    h2 {
+        font-size: 3rem;
+        text-align: left;
+        font-weight: 700;
+        padding: 0;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 4.9rem;
+        padding: 0 0 1rem 0;
+    }
+    h4 {
+        font-size: 2.1rem;
+        line-height: 4.5rem;
+        font-weight: 700;
+        padding: 0 2rem 0 0;
+    }
+    h6 {
+        font-style: italic;
+    }
+    p {
+        margin: 0;
+        padding: 0 0 5rem 0;
+        font-size: 1.8rem;
+        line-height: 3.8rem;
+    }
+    a:link,
+    a:visited {
+        color: #82a8c2;
+    }
+    a:hover,
+    a:active {
+        color: $bodytext;
+    }
+    img {
+        height: auto;
+        margin: auto;
+    
+    }
+    .project-header {
+        grid-template-columns: 1fr 2fr;
+        grid-column-gap: 4rem;
+        padding-bottom: 3rem;
+    }
+    .project-white {
+        background-color: $white;
+        color: $gray-7;
+    }
+    .project-gray {
+        background-color: $gray-project;
+        color: $bodytext;
+    }
+    .project-black {
+        background-color: $offblack;
+        color: $offwhite;
+    }
+    .project-pure-black {
+        background-color: $black;
+        color: $offwhite;
+    }
+    .project-blue-gradient {
+        background: linear-gradient(180deg, #4FFAFF 0%, #009BC5 100%);
+    }
+    .project-white,
+    .project-gray,
+    .project-black,
+    .project-pure-black,
+    .project-blue-gradient {
+        width: 100%;
+        margin: auto;
+        padding: 16rem 0;
+    }
+    .project-gray-offset {
+        background-color: $gray-project;
+        color: $bodytext;
+        width: 100%;
+        margin: auto;
+        padding: 8rem 0 0 0;
+    }
+    .project-white-offset {
+        background-color: $white;
+        color: $gray-7;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .project-white-split {
+        background-color: $white;
+        color: $gray-7;
+        width: 100%;
+        margin: auto;
+        padding: 0 0 16rem 0;
+    }
+    .drop-down {
+        margin: auto;
+        width: 80rem;
+        margin-bottom: -.5rem;
+    }
+    .lift-up {
+        margin: auto;
+        width: 80rem;
+    }
+    .split-img {
+        width: 100%;
+        padding: 0 0 1.9rem 0;
+    }
+    .split-screen {
+        grid-template-columns: 38rem 38rem;
+        grid-column-gap: 4rem;
+    }
+    .img439 {
+        width: 43.9rem;
+    }
+    .img547 {
+        width: 54.7rem;
+        margin: auto;
+        display: block;
+        padding: 0 0 6.9rem 0;
+    }
+    .under-space {
+        padding-bottom: 5rem;
+    }
+    
+}
+
+/* PROJECT FOOTER */
+#project-footer {
+    width: 100%;
+    background-color: $offblack;
+    color: $offwhite;
+    .grid-parent {
+        grid-template-columns: 1fr 3fr 1fr;
+        div {
+            padding: 2rem 5rem;
+        }
+        #previousProject {
+            text-align: left;
+        }
+        #footer-back-to-projects {
+            text-align: center;
+        }
+        #nextProject {
+            text-align: right;
+        }
+    }
+    a:link,
+    a:visited {
+        color: $gray-9;
+    }
+    a:hover,
+    a:active {
+        color: $white;
+    }
+}
