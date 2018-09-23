@@ -131,17 +131,59 @@ button:hover {
   margin: auto;
   display: block;
 }
+@media only screen and (max-width: 1000px) {
+  .project-wide {
+    width: calc(100% - 200px);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .project-wide {
+    width: calc(100% - 100px);
+  }
+}
+
+.project-wide-img {
+  width: 80rem;
+  margin: auto;
+  display: block;
+}
+@media only screen and (max-width: 1000px) {
+  .project-wide-img {
+    width: 100%;
+  }
+}
+
+.project-half {
+  width: 38rem;
+  margin: auto;
+  display: block;
+}
+@media only screen and (max-width: 1200px) {
+  .project-half {
+    width: 100%;
+  }
+}
 
 .project-medium {
   width: 60rem;
   margin: auto;
   display: block;
 }
+@media only screen and (max-width: 1200px) {
+  .project-medium {
+    width: 100%;
+  }
+}
 
 .project-small {
   width: 44rem;
   margin: auto;
   display: block;
+}
+@media only screen and (max-width: 1200px) {
+  .project-small {
+    width: 100%;
+  }
 }
 
 .drop-down {
@@ -160,6 +202,10 @@ button:hover {
 .split-screen {
   grid-template-columns: 4fr 6fr;
   grid-column-gap: 2rem;
+}
+
+.center {
+  text-align: center;
 }
 
 .dell {
@@ -202,7 +248,7 @@ button:hover {
 header {
   background-color: #12171d;
   background-repeat: no-repeat;
-  background-size: 1440px 307px;
+  background-size: cover;
   color: white;
   height: auto;
   width: 100%;
@@ -385,9 +431,19 @@ footer .grid-parent #footer-right a {
   width: 80rem;
   margin-bottom: -0.5rem;
 }
+@media only screen and (max-width: 1200px) {
+  .project-page .drop-down {
+    width: 100%;
+  }
+}
 .project-page .lift-up {
   margin: auto;
   width: 80rem;
+}
+@media only screen and (max-width: 1200px) {
+  .project-page .lift-up {
+    width: 100%;
+  }
 }
 .project-page .split-img {
   width: 100%;
@@ -396,6 +452,11 @@ footer .grid-parent #footer-right a {
 .project-page .split-screen {
   grid-template-columns: 38rem 38rem;
   grid-column-gap: 4rem;
+}
+@media only screen and (max-width: 1200px) {
+  .project-page .split-screen {
+    width: 100%;
+  }
 }
 .project-page .img439 {
   width: 43.9rem;
@@ -406,8 +467,110 @@ footer .grid-parent #footer-right a {
   display: block;
   padding: 0 0 6.9rem 0;
 }
+@media only screen and (max-width: 1200px) {
+  .project-page .img547 {
+    width: 100%;
+  }
+}
 .project-page .under-space {
   padding-bottom: 5rem;
+}
+.project-page .pic-after-pic {
+  padding-top: 16rem;
+}
+.project-page .two-pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0rem;
+}
+
+.design-process {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 0;
+}
+.design-process h5 {
+  color: #12171d;
+  font-weight: bold;
+}
+.design-process p {
+  line-height: 3rem;
+  padding-top: 1rem;
+}
+.design-process .left {
+  text-align: right;
+  padding-right: 4rem;
+  border-right: solid 2px #12171d;
+  grid-column: 1/2;
+}
+.design-process .right {
+  text-align: left;
+  padding-left: 4rem;
+  grid-column: 2/3;
+}
+.design-process .left::before,
+.design-process .right::before {
+  content: "";
+  font-size: 0;
+  padding: 1rem;
+  height: 1rem;
+  border: solid 2px #12171d;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.design-process .left::before {
+  top: 2.5rem;
+  right: -5.3rem;
+}
+.design-process .right::before {
+  top: 2.5rem;
+  left: -5.3rem;
+}
+.design-process #security-1 {
+  grid-row: 1/3;
+}
+.design-process #security-2 {
+  grid-row: 2/4;
+}
+.design-process #security-3 {
+  grid-row: 3/5;
+}
+.design-process #security-4 {
+  grid-row: 4/6;
+}
+.design-process #security-5 {
+  grid-row: 5/7;
+}
+.design-process #security-6 {
+  grid-row: 6/8;
+}
+.design-process #security-1::after {
+  width: 20px;
+  height: 2.5rem;
+  background-color: #fff;
+  position: relative;
+  content: "";
+  padding: 1.25rem 1px;
+  font-size: 1rem;
+  top: -39.4rem;
+  right: -4.2rem;
+}
+@media only screen and (max-width: 840px) {
+  .design-process #security-1::after {
+    top: -51.4rem;
+  }
+}
+.design-process #security-6::after {
+  width: 20px;
+  height: 16rem;
+  background-color: #12171d;
+  position: relative;
+  content: "";
+  padding: 8rem 1px;
+  font-size: 1rem;
+  bottom: 15rem;
+  left: -4.2rem;
 }
 
 /* PROJECT FOOTER */
