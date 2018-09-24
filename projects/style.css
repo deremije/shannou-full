@@ -67,7 +67,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 3rem;
   line-height: 4.9rem;
   padding: 0 0 1rem 0;
@@ -92,6 +92,7 @@ h5 {
 p {
   display: block;
   font-size: 1.8rem;
+  font-weight: 300;
 }
 
 a {
@@ -253,6 +254,7 @@ header {
   height: auto;
   width: 100%;
   font-size: 1.6rem;
+  margin-bottom: 4rem;
 }
 header .header-grid {
   display: grid;
@@ -285,8 +287,12 @@ header .leftHeader {
 }
 header h2 {
   position: relative;
-  bottom: 6.2rem;
+  bottom: 5rem;
   line-height: 6.2rem;
+  letter-spacing: 2px;
+}
+header h2 span {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 header .two-line {
   margin-top: -4rem;
@@ -400,21 +406,21 @@ footer .grid-parent #footer-right {
 }
 .project-page h3 {
   font-size: 3rem;
-  line-height: 4.9rem;
-  padding: 0 0 1rem 0;
+  line-height: 3rem;
+  padding: 8rem 0 0 0;
 }
 .project-page h4 {
   font-size: 2.1rem;
-  line-height: 4.5rem;
+  margin-bottom: 0;
   font-weight: 700;
-  padding: 0 2rem 0 0;
+  padding: 10rem 0 0 0;
 }
 .project-page h6 {
   font-style: italic;
 }
 .project-page p {
   margin: 0;
-  padding: 0 0 5rem 0;
+  padding: 2.4rem 0 0 0;
   font-size: 1.8rem;
   line-height: 3.8rem;
 }
@@ -429,6 +435,7 @@ footer .grid-parent #footer-right {
 .project-page img {
   height: auto;
   margin: auto;
+  padding-top: 7.5rem;
 }
 .project-page .project-header {
   grid-template-columns: 1fr 2fr;
@@ -453,22 +460,36 @@ footer .grid-parent #footer-right {
 }
 .project-page .project-blue-gradient {
   background: linear-gradient(180deg, #4FFAFF 0%, #009BC5 100%);
+  width: 100%;
+  margin: auto;
+  padding: 3rem 0 11rem 0;
+}
+.project-page .project-blue-gradient-2 {
+  background: linear-gradient(180deg, #21B8CF 0%, #145A87 100%);
+  width: 100%;
+  margin: auto;
+  padding: 3rem 0 11rem 0;
 }
 .project-page .project-white,
 .project-page .project-gray,
 .project-page .project-black,
 .project-page .project-pure-black,
-.project-page .project-blue-gradient {
+.project-page .project-impact {
   width: 100%;
   margin: auto;
-  padding: 16rem 0;
+  padding: 0 0 15rem 0;
+}
+.project-page .project-impact {
+  background-color: #12171d;
+  color: #FCFDFF;
+  padding: 7rem 0 15rem 0;
 }
 .project-page .project-gray-offset {
   background-color: #f4f4f4;
   color: #494949;
   width: 100%;
   margin: auto;
-  padding: 8rem 0 0 0;
+  padding: 0rem 0 9rem 0;
 }
 .project-page .project-white-offset {
   background-color: #fff;
@@ -483,11 +504,12 @@ footer .grid-parent #footer-right {
   width: 100%;
   margin: auto;
   padding: 0 0 16rem 0;
+  margin-top: -5rem;
 }
 .project-page .drop-down {
   margin: auto;
   width: 80rem;
-  margin-bottom: -1rem;
+  margin-bottom: -10rem;
 }
 @media only screen and (max-width: 1000px) {
   .project-page .drop-down {
@@ -497,19 +519,27 @@ footer .grid-parent #footer-right {
 .project-page .lift-up {
   margin: auto;
   width: 80rem;
+  margin-top: -9rem;
 }
 @media only screen and (max-width: 1000px) {
   .project-page .lift-up {
     width: 100%;
   }
 }
-.project-page .split-img {
-  width: 100%;
-  padding: 0 0 1.9rem 0;
-}
 .project-page .split-screen {
   grid-template-columns: 38rem 38rem;
   grid-column-gap: 4rem;
+}
+.project-page .split-screen h4 {
+  padding: 0;
+}
+.project-page .split-screen figcaption {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.project-page .split-screen img {
+  width: 100%;
+  padding: 0 0 0 0;
 }
 @media only screen and (max-width: 1000px) {
   .project-page .split-screen {
@@ -530,16 +560,16 @@ footer .grid-parent #footer-right {
     width: 100%;
   }
 }
-.project-page .under-space {
-  padding-bottom: 5rem;
-}
 .project-page .pic-after-pic {
-  padding-top: 4rem;
+  padding-top: 15rem;
+}
+.project-page .set-of-four {
+  padding-top: 2rem;
 }
 .project-page .two-pics {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 0rem;
+  grid-column-gap: 6rem;
 }
 @media only screen and (max-width: 425px) {
   .project-page .two-pics {
@@ -552,6 +582,7 @@ footer .grid-parent #footer-right {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-column-gap: 0;
+  padding-top: 4rem;
 }
 .design-process h5 {
   color: #12171d;
@@ -560,6 +591,7 @@ footer .grid-parent #footer-right {
 .design-process p {
   line-height: 3rem;
   padding-top: 1rem;
+  padding-bottom: 2.5rem;
 }
 .design-process .left {
   text-align: right;
@@ -594,6 +626,7 @@ footer .grid-parent #footer-right {
 .design-process #security-1 {
   grid-row: 1/3;
   position: relative;
+  margin-bottom: -2.5rem;
 }
 .design-process #security-2 {
   grid-row: 2/4;
@@ -620,17 +653,17 @@ footer .grid-parent #footer-right {
   font-size: 1rem;
   top: -0.2rem;
   right: -1rem;
-  background-color: #fff;
+  background-color: #f4f4f4;
 }
 .design-process #security-6::after {
   width: 0px;
-  height: 16rem;
+  height: 20rem;
   background-color: #12171d;
   position: absolute;
   content: "";
   padding: 1rem 1px;
   font-size: 1rem;
-  bottom: 12rem;
+  bottom: 6rem;
   left: -0.2rem;
 }
 
@@ -678,6 +711,7 @@ footer .grid-parent #footer-right {
   width: 100%;
   background-color: #12171d;
   color: #FCFDFF;
+  font-size: 1.5rem;
 }
 #project-footer .grid-parent {
   grid-template-columns: 1fr 3fr 1fr;
@@ -688,7 +722,7 @@ footer .grid-parent #footer-right {
   }
 }
 #project-footer .grid-parent div {
-  padding: 2rem 5rem;
+  padding: 3rem 4rem 2rem;
 }
 #project-footer .grid-parent #previousProject {
   text-align: left;
