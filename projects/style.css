@@ -158,7 +158,7 @@ button:hover {
   margin: auto;
   display: block;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .project-half {
     width: 100%;
   }
@@ -169,7 +169,7 @@ button:hover {
   margin: auto;
   display: block;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 800px) {
   .project-medium {
     width: 100%;
   }
@@ -180,7 +180,7 @@ button:hover {
   margin: auto;
   display: block;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 640px) {
   .project-small {
     width: 100%;
   }
@@ -291,6 +291,21 @@ header h2 {
 header .two-line {
   margin-top: -4rem;
 }
+@media only screen and (max-width: 700px) {
+  header .header-grid {
+    grid-template-columns: 30.2rem;
+  }
+  header .header-grid .leftHeader {
+    padding-bottom: 2rem;
+  }
+  header .header-grid nav {
+    margin-left: -1.3rem;
+    padding: 0;
+  }
+  header .header-grid nav :nth-child(4) {
+    display: none;
+  }
+}
 
 /* FOOTER */
 footer {
@@ -326,6 +341,49 @@ footer .grid-parent #footer-right {
 }
 footer .grid-parent #footer-right a {
   padding-left: 1rem;
+}
+@media only screen and (max-width: 1023px) {
+  footer {
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+  footer .grid-parent {
+    grid-template-columns: 64.2rem;
+    margin: auto;
+    width: 64.2rem;
+  }
+  footer .grid-parent #footer-left {
+    width: 64.2rem;
+    padding: 1rem 0 3rem 0;
+    margin: 0;
+    height: auto;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  footer .grid-parent #footer-right {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: left;
+    width: 64.2rem;
+    padding: 0;
+    margin: 0;
+    height: auto;
+  }
+  footer .grid-parent #footer-right a {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer .grid-parent {
+    width: 30.2rem;
+    grid-template-columns: 30.2rem;
+  }
+  footer .grid-parent #footer-left,
+footer .grid-parent #footer-right {
+    width: 30.2rem;
+  }
 }
 
 /* PROJECT PAGE VALUES */
@@ -429,9 +487,9 @@ footer .grid-parent #footer-right a {
 .project-page .drop-down {
   margin: auto;
   width: 80rem;
-  margin-bottom: -0.5rem;
+  margin-bottom: -1rem;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .project-page .drop-down {
     width: 100%;
   }
@@ -440,7 +498,7 @@ footer .grid-parent #footer-right a {
   margin: auto;
   width: 80rem;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .project-page .lift-up {
     width: 100%;
   }
@@ -453,9 +511,9 @@ footer .grid-parent #footer-right a {
   grid-template-columns: 38rem 38rem;
   grid-column-gap: 4rem;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .project-page .split-screen {
-    width: 100%;
+    grid-template-columns: 100%;
   }
 }
 .project-page .img439 {
@@ -467,7 +525,7 @@ footer .grid-parent #footer-right a {
   display: block;
   padding: 0 0 6.9rem 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .project-page .img547 {
     width: 100%;
   }
@@ -476,12 +534,18 @@ footer .grid-parent #footer-right a {
   padding-bottom: 5rem;
 }
 .project-page .pic-after-pic {
-  padding-top: 16rem;
+  padding-top: 4rem;
 }
 .project-page .two-pics {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 0rem;
+}
+@media only screen and (max-width: 425px) {
+  .project-page .two-pics {
+    grid-template-columns: 100%;
+    grid-row-gap: 4rem;
+  }
 }
 
 .design-process {
@@ -529,6 +593,7 @@ footer .grid-parent #footer-right a {
 }
 .design-process #security-1 {
   grid-row: 1/3;
+  position: relative;
 }
 .design-process #security-2 {
   grid-row: 2/4;
@@ -544,35 +609,70 @@ footer .grid-parent #footer-right a {
 }
 .design-process #security-6 {
   grid-row: 6/8;
+  position: relative;
 }
 .design-process #security-1::after {
   width: 20px;
   height: 2.5rem;
-  background-color: #fff;
-  position: relative;
+  position: absolute;
   content: "";
-  padding: 1.25rem 1px;
+  padding: 0.5rem 2px;
   font-size: 1rem;
-  top: -39.4rem;
-  right: -4.2rem;
-}
-@media only screen and (max-width: 840px) {
-  .design-process #security-1::after {
-    top: -51.4rem;
-  }
+  top: -0.2rem;
+  right: -1rem;
+  background-color: #fff;
 }
 .design-process #security-6::after {
-  width: 20px;
+  width: 0px;
   height: 16rem;
   background-color: #12171d;
-  position: relative;
+  position: absolute;
   content: "";
-  padding: 8rem 1px;
+  padding: 1rem 1px;
   font-size: 1rem;
-  bottom: 15rem;
-  left: -4.2rem;
+  bottom: 12rem;
+  left: -0.2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .design-process {
+    grid-template-columns: 100%;
+  }
+  .design-process .right {
+    text-align: right;
+    padding-right: 4rem;
+    padding-left: 0rem;
+    border-right: solid 2px #12171d;
+    border-left: none;
+    grid-column: 1/2;
+  }
+  .design-process .right::before {
+    top: 2.5rem;
+    right: -5.3rem;
+    left: auto;
+  }
+  .design-process #security-1 {
+    grid-row: 1/2;
+  }
+  .design-process #security-2 {
+    grid-row: 2/3;
+  }
+  .design-process #security-3 {
+    grid-row: 3/4;
+  }
+  .design-process #security-4 {
+    grid-row: 4/5;
+  }
+  .design-process #security-5 {
+    grid-row: 5/6;
+  }
+  .design-process #security-6 {
+    grid-row: 6/7;
+  }
+  .design-process #security-6::after {
+    display: none;
+  }
+}
 /* PROJECT FOOTER */
 #project-footer {
   width: 100%;
@@ -582,6 +682,11 @@ footer .grid-parent #footer-right a {
 #project-footer .grid-parent {
   grid-template-columns: 1fr 3fr 1fr;
 }
+@media only screen and (max-width: 605px) {
+  #project-footer .grid-parent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 #project-footer .grid-parent div {
   padding: 2rem 5rem;
 }
@@ -590,6 +695,11 @@ footer .grid-parent #footer-right a {
 }
 #project-footer .grid-parent #footer-back-to-projects {
   text-align: center;
+}
+@media only screen and (max-width: 605px) {
+  #project-footer .grid-parent #footer-back-to-projects {
+    display: none;
+  }
 }
 #project-footer .grid-parent #nextProject {
   text-align: right;
