@@ -551,11 +551,11 @@ header {
             color: $h5;
         }
     }
-    @media only screen and (max-height: 774px) {
-        position: relative;
-        top: 0;
-        margin-bottom: 11.1rem;
-    }
+    // @media only screen and (max-height: 774px) {
+    //     position: relative;
+    //     top: 0;
+    //     margin-bottom: 11.1rem;
+    // }
     @media only screen and (max-width: 1023px) {
         h1,
         .button-wrapper {
@@ -601,15 +601,15 @@ header {
     background: none;
     opacity: 0;
     z-index: 10;
-    display: hidden;
+    // display: hidden;
     @media only screen and (max-width: 1023px) {
         height: 0;
         display: none;
     }
-    @media only screen and (max-height: 774px) {
-        height: 0;
-        display: none;
-    }
+    // @media only screen and (max-height: 774px) {
+    //     height: 0;
+    //     display: none;
+    // }
 }
 
 /* FOOTER */
