@@ -528,6 +528,13 @@ header #mainHeader .leftHeader {
     color: #959595;
   }
 }
+@media only screen and (max-height: 774px) {
+  #resume {
+    position: relative;
+    top: 0;
+    margin-bottom: 11.1rem;
+  }
+}
 @media only screen and (max-width: 1023px) {
   #resume {
     position: relative;
@@ -577,6 +584,12 @@ header #mainHeader .leftHeader {
   display: hidden;
 }
 @media only screen and (max-width: 1023px) {
+  #view-resume {
+    height: 0;
+    display: none;
+  }
+}
+@media only screen and (max-height: 774px) {
   #view-resume {
     height: 0;
     display: none;
