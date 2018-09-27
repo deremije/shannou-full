@@ -3,7 +3,7 @@ window.onload = function() {
     setSkillsHeight();
     setResumeHeight();
 
-    makeUpper();
+    // makeUpper();
 
     let currentPosition = document.body.scrollTop;
     

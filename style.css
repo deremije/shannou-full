@@ -172,11 +172,12 @@ header #mainHeader .leftHeader {
 }
 @media only screen and (max-width: 700px) {
   header #mainHeader {
-    height: 7.1rem;
+    height: 9.1rem;
     grid-template-columns: 30.2rem;
+    border-bottom: solid 1px #333;
   }
   header #mainHeader .leftHeader {
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   header #mainHeader nav {
     padding-top: 0;
@@ -257,6 +258,7 @@ header #mainHeader .leftHeader {
   }
   #intro #hello p {
     margin-top: -1rem;
+    padding-right: 6rem;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -271,10 +273,12 @@ header #mainHeader .leftHeader {
     font-size: 3.5rem;
     font-weight: 800;
     width: 24rem;
-    margin: auto;
+    margin: 4rem auto 0;
   }
   #intro #hello p {
     font-weight: 300;
+    padding-right: 0;
+    margin-top: 1rem;
   }
 }
 
@@ -301,6 +305,7 @@ header #mainHeader .leftHeader {
   grid-column-gap: 3.8rem;
   grid-row-gap: 3.8rem;
   padding-bottom: 16.9rem;
+  padding-top: 14.8rem;
   margin: auto;
 }
 #projects .tile {
@@ -335,11 +340,6 @@ header #mainHeader .leftHeader {
   color: #000;
 }
 @media only screen and (max-width: 1100px) {
-  #projects h1 {
-    display: none;
-    height: 0;
-    overflow: hidden;
-  }
   #projects .grid-parent {
     padding-top: 2.2rem;
   }
@@ -349,12 +349,18 @@ header #mainHeader .leftHeader {
     width: 64.2rem;
     grid-template-columns: 30.2rem 30.2rem;
   }
+  #projects #hidden-tile {
+    display: none;
+  }
 }
 @media only screen and (max-width: 700px) {
   #projects .grid-parent {
     width: 30.2rem;
     grid-template-columns: 30.2rem;
     padding-bottom: 9rem;
+  }
+  #projects #hidden-tile {
+    display: block;
   }
 }
 
@@ -475,6 +481,7 @@ header #mainHeader .leftHeader {
   width: 25.9rem;
   font-size: 1.6rem;
   border-radius: 0.3rem;
+  margin-top: 1.5rem;
 }
 #resume button:hover {
   background-color: #FCFDFF;
@@ -486,8 +493,11 @@ header #mainHeader .leftHeader {
 #resume .button-wrapper {
     width: 82rem;
   }
-  #resume .grid-parent {
-    grid-column-gap: 8.5rem;
+  #resume h3 {
+    margin-top: 2rem;
+  }
+  #resume .small-space {
+    padding-bottom: 0;
   }
 }
 @media only screen and (max-height: 852px) and (min-height: 750px) {
@@ -602,7 +612,7 @@ footer .grid-parent #footer-left {
 }
 footer .grid-parent #footer-right {
   padding: 4rem 4rem 3.3rem 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: right;
   height: 3.8rem;
 }

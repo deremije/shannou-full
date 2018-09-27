@@ -11,6 +11,7 @@ $nav-click: #82a8c2;
 $tileborder: #eaeaea;
 $h5: #959595;
 $button-border: #979797;
+$footer-gray: #555;
 
 /* GLOBAL */
 html {
@@ -174,10 +175,11 @@ header {
     }
     @media only screen and (max-width: 700px) {
         #mainHeader {
-            height: 7.1rem;
+            height: 9.1rem;
             grid-template-columns: 30.2rem;
+            border-bottom: solid 1px #333;
             .leftHeader {
-                padding-bottom: 2rem;
+                padding-bottom: 1.5rem;
             }
             nav {
                 padding-top: 0;
@@ -256,6 +258,7 @@ header {
             margin-top: 0rem;
             p {
                 margin-top: -1rem;
+                padding-right: 6rem;
             }
         }
     }
@@ -269,14 +272,15 @@ header {
             font-size: 3.5rem;
             font-weight: 800;
             width: 24rem;
-            margin: auto;
+            margin: 4rem auto 0;
             p {
                 font-weight: 300;
+                padding-right: 0;
+                margin-top: 1rem;
             }
         }
     }
 }
-
 
 /* PROJECTS */
 #projects {
@@ -300,6 +304,7 @@ header {
         grid-column-gap: 3.8rem;
         grid-row-gap: 3.8rem;
         padding-bottom: 16.9rem;
+        padding-top: 14.8rem;
         margin: auto;
     }
     .tile {
@@ -334,11 +339,6 @@ header {
         }
     }
     @media only screen and (max-width: 1100px) {
-        h1 {
-            display: none;
-            height: 0;
-            overflow: hidden;
-        }
         .grid-parent {
             padding-top: 2.2rem;
         }
@@ -349,12 +349,18 @@ header {
             width: 64.2rem;
             grid-template-columns: 30.2rem 30.2rem;
         }
+        #hidden-tile {
+            display: none;
+        }
     }
     @media only screen and (max-width: 700px) {
         .grid-parent {
             width: 30.2rem;
             grid-template-columns: 30.2rem;
             padding-bottom: 9rem;
+        }
+        #hidden-tile {
+            display: block;
         }
     }
 
@@ -479,6 +485,7 @@ header {
         width: 25.9rem;
         font-size: 1.6rem;
         border-radius: .3rem;
+        margin-top: 1.5rem;
     }
     button:hover {
         background-color: $offwhite;
@@ -491,8 +498,11 @@ header {
         .button-wrapper {
             width: 82rem;
         }
-        .grid-parent {
-            grid-column-gap: 8.5rem;
+        h3 {
+            margin-top: 2rem;
+        }
+        .small-space {
+            padding-bottom: 0;
         }
     }
 
@@ -607,7 +617,7 @@ footer {
         }
         #footer-right {
             padding: 4rem 4rem 3.3rem 0;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-align: right;
             height: 3.8rem;
             a {
