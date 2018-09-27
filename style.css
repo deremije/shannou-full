@@ -190,6 +190,28 @@ header #mainHeader .leftHeader {
   }
 }
 
+@media only screen and (max-width: 1023px) {
+  #projects-marker {
+    top: -8rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #projects-marker {
+    top: -12rem;
+  }
+}
+
+.marker {
+  height: 0;
+  position: relative;
+  top: 0rem;
+}
+@media only screen and (max-width: 700px) {
+  .marker {
+    top: -12rem;
+  }
+}
+
 .navHide {
   opacity: 0;
 }

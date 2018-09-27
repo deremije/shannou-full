@@ -20,6 +20,16 @@ window.onload = function() {
     });
 }
 
+function viewResume() {
+    let windowView = (window.innerWidth < 1024 || window.innerHeight < 700);
+    console.log(windowView);
+    if (windowView) {
+        window.location = "#resume-marker";
+    } else {
+        window.location = "#view-resume";
+    }
+}
+
 function navHide() {
     let header = document.getElementById("header");
     header.classList.add("navHide");
