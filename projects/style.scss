@@ -582,6 +582,18 @@ footer {
             padding: 1rem 0 .5rem;
         }
     }
+    .financial-img {
+        width: 53.5rem;
+        margin: auto;
+        display: block;
+       
+        @media only screen and (max-width: 535px) {
+            width: 100%;
+        }
+        @media only screen and (max-width: 700px) {
+            padding: 1rem 0 .5rem;
+        }
+    }
     // .under-space {
     //     padding-bottom: 5rem;
     // }
