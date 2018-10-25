@@ -380,9 +380,33 @@ header {
             display: block;
         }
     }
-
-    
+    .older {
+        display: none;
+        opacity: 0;
+        transition: all 1s linear;
+    }
+    .button-wrapper {
+        width: 30.2rem;
+        margin: auto;
+        display: flex;
+    }
+    button {
+        background-color: $offwhite;
+        color: $offblack;
+        border: solid 1px $button-border;
+        height: 6rem;
+        width: 25.9rem;
+        font-size: 1.6rem;
+        border-radius: .3rem;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    button:hover {
+        background-color: $offwhite;
+        color: $offblack;
+    }
 }
+
 
 /* SKILLS */
 #skills {

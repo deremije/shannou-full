@@ -385,6 +385,31 @@ header #mainHeader .leftHeader {
     display: block;
   }
 }
+#projects .older {
+  display: none;
+  opacity: 0;
+  transition: all 1s linear;
+}
+#projects .button-wrapper {
+  width: 30.2rem;
+  margin: auto;
+  display: flex;
+}
+#projects button {
+  background-color: #FCFDFF;
+  color: #12171d;
+  border: solid 1px #979797;
+  height: 6rem;
+  width: 25.9rem;
+  font-size: 1.6rem;
+  border-radius: 0.3rem;
+  margin: auto;
+  margin-top: 1.5rem;
+}
+#projects button:hover {
+  background-color: #FCFDFF;
+  color: #12171d;
+}
 
 /* SKILLS */
 #skills {

@@ -61,3 +61,13 @@ function makeUpper() {
         document.getElementById("hi").innerHTML = "HELLO !";
     }
 }
+
+function showOlder() {
+    document.getElementById("oldButton").style.display = "none";
+    for (let i = 0; i < document.getElementsByClassName("older").length; i++) {
+        console.log(document.getElementsByClassName("older")[i]);
+        console.log(document.getElementsByClassName("older")[i].style.transition);
+        document.getElementsByClassName("older")[i].style.display = "block";
+        document.getElementsByClassName("older")[i].style.opacity = "1";
+    }
+}
