@@ -752,6 +752,9 @@ footer {
     background-color: $offblack;
     color: $offwhite;
     font-size: 1.5rem;
+    .exclude {
+        opacity: 0;
+    }
     .grid-parent {
         grid-template-columns: 1fr 3fr 1fr;
         @media only screen and (max-width: 605px) {
@@ -769,8 +772,22 @@ footer {
                 display: none;
             }
         }
+        
         #nextProject {
             text-align: right;
+        }
+    }
+    .grid-parent-exclude {
+        grid-template-columns: 1fr;
+        div {
+            padding: 3rem 4rem 2rem;
+        }
+        #previousProject,
+        #nextProject {
+            display: none;
+        }
+        #footer-back-to-projects {
+            text-align: center;
         }
     }
     a:link,

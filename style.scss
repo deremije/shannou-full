@@ -386,7 +386,8 @@ header {
         transition: all 1s linear;
     }
     .button-wrapper {
-        width: 30.2rem;
+        // width: 30.2rem;
+        width: 100rem;
         margin: auto;
         display: flex;
     }
@@ -395,15 +396,15 @@ header {
         color: $offblack;
         border: solid 1px $button-border;
         height: 6rem;
-        width: 25.9rem;
+        width: 98%;
         font-size: 1.6rem;
         border-radius: .3rem;
-        margin: auto;
         margin-top: 1.5rem;
     }
     button:hover {
-        background-color: $offwhite;
-        color: $offblack;
+        background-color: $offblack;
+        color: $offwhite;
+        cursor: pointer;
     }
 }
 

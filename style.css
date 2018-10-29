@@ -391,7 +391,7 @@ header #mainHeader .leftHeader {
   transition: all 1s linear;
 }
 #projects .button-wrapper {
-  width: 30.2rem;
+  width: 100rem;
   margin: auto;
   display: flex;
 }
@@ -400,15 +400,15 @@ header #mainHeader .leftHeader {
   color: #12171d;
   border: solid 1px #979797;
   height: 6rem;
-  width: 25.9rem;
+  width: 98%;
   font-size: 1.6rem;
   border-radius: 0.3rem;
-  margin: auto;
   margin-top: 1.5rem;
 }
 #projects button:hover {
-  background-color: #FCFDFF;
-  color: #12171d;
+  background-color: #12171d;
+  color: #FCFDFF;
+  cursor: pointer;
 }
 
 /* SKILLS */

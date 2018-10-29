@@ -800,6 +800,9 @@ footer .grid-parent #footer-right a {
   color: #FCFDFF;
   font-size: 1.5rem;
 }
+#project-footer .exclude {
+  opacity: 0;
+}
 #project-footer .grid-parent {
   grid-template-columns: 1fr 3fr 1fr;
 }
@@ -824,6 +827,19 @@ footer .grid-parent #footer-right a {
 }
 #project-footer .grid-parent #nextProject {
   text-align: right;
+}
+#project-footer .grid-parent-exclude {
+  grid-template-columns: 1fr;
+}
+#project-footer .grid-parent-exclude div {
+  padding: 3rem 4rem 2rem;
+}
+#project-footer .grid-parent-exclude #previousProject,
+#project-footer .grid-parent-exclude #nextProject {
+  display: none;
+}
+#project-footer .grid-parent-exclude #footer-back-to-projects {
+  text-align: center;
 }
 #project-footer a:link,
 #project-footer a:visited {
