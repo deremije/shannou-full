@@ -366,7 +366,7 @@ header {
             width: 64.2rem;
             grid-template-columns: 30.2rem 30.2rem;
         }
-        #hidden-tile {
+        .hidden-tile {
             display: none;
         }
     }
@@ -374,36 +374,41 @@ header {
         .grid-parent {
             width: 30.2rem;
             grid-template-columns: 30.2rem;
-            padding-bottom: 9rem;
+            padding-bottom: 0rem;
         }
-        #hidden-tile {
+        .hidden-tile {
             display: block;
         }
     }
     .older {
         display: none;
         opacity: 0;
+        height: 0;
         transition: all 1s linear;
+        // padding: 0;
     }
     .button-wrapper {
-        width: 30.2rem;
+        // width: 30.2rem;
+        width: 100rem;
         margin: auto;
         display: flex;
+        @media only screen and (max-width: 700px) {
+            margin-top: -5rem;
+        }
     }
     button {
         background-color: $offwhite;
         color: $offblack;
         border: solid 1px $button-border;
         height: 6rem;
-        width: 25.9rem;
+        width: 98%;
         font-size: 1.6rem;
         border-radius: .3rem;
-        margin: auto;
         margin-top: 1.5rem;
     }
     button:hover {
-        background-color: $offwhite;
-        color: $offblack;
+        background-color: $offblack;
+        color: $offwhite;
     }
 }
 

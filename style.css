@@ -371,7 +371,7 @@ header #mainHeader .leftHeader {
     width: 64.2rem;
     grid-template-columns: 30.2rem 30.2rem;
   }
-  #projects #hidden-tile {
+  #projects .hidden-tile {
     display: none;
   }
 }
@@ -379,36 +379,41 @@ header #mainHeader .leftHeader {
   #projects .grid-parent {
     width: 30.2rem;
     grid-template-columns: 30.2rem;
-    padding-bottom: 9rem;
+    padding-bottom: 0rem;
   }
-  #projects #hidden-tile {
+  #projects .hidden-tile {
     display: block;
   }
 }
 #projects .older {
   display: none;
   opacity: 0;
+  height: 0;
   transition: all 1s linear;
 }
 #projects .button-wrapper {
-  width: 30.2rem;
+  width: 100rem;
   margin: auto;
   display: flex;
+}
+@media only screen and (max-width: 700px) {
+  #projects .button-wrapper {
+    margin-top: -5rem;
+  }
 }
 #projects button {
   background-color: #FCFDFF;
   color: #12171d;
   border: solid 1px #979797;
   height: 6rem;
-  width: 25.9rem;
+  width: 98%;
   font-size: 1.6rem;
   border-radius: 0.3rem;
-  margin: auto;
   margin-top: 1.5rem;
 }
 #projects button:hover {
-  background-color: #FCFDFF;
-  color: #12171d;
+  background-color: #12171d;
+  color: #FCFDFF;
 }
 
 /* SKILLS */
