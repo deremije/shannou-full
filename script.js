@@ -69,5 +69,6 @@ function showOlder() {
         console.log(document.getElementsByClassName("older")[i].style.transition);
         document.getElementsByClassName("older")[i].style.display = "block";
         document.getElementsByClassName("older")[i].style.opacity = "1";
+        document.getElementsByClassName("older")[i].style.height = "auto";
     }
 }
