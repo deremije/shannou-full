@@ -753,9 +753,6 @@ footer {
     background-color: $offblack;
     color: $offwhite;
     font-size: 1.5rem;
-    .exclude {
-        opacity: 0;
-    }
     .grid-parent {
         grid-template-columns: 1fr 3fr 1fr;
         @media only screen and (max-width: 605px) {
