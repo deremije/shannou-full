@@ -801,6 +801,9 @@ footer .grid-parent #footer-right a {
   color: #FCFDFF;
   font-size: 1.5rem;
 }
+#project-footer .exclude {
+  opacity: 0;
+}
 #project-footer .grid-parent {
   grid-template-columns: 1fr 3fr 1fr;
 }

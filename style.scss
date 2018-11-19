@@ -388,7 +388,8 @@ header {
         // padding: 0;
     }
     .button-wrapper {
-        width: 30.2rem;
+        // width: 30.2rem;
+        width: 100rem;
         margin: auto;
         display: flex;
         @media only screen and (max-width: 700px) {
@@ -401,7 +402,6 @@ header {
         color: $offblack;
         border: solid 1px $button-border;
         height: 6rem;
-        // width: 98%;
         font-size: 1.6rem;
         border-radius: .3rem;
         margin-top: 1.5rem;
